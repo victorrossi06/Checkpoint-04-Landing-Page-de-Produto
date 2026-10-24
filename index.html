@@ -1,97 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zinger</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Zingen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Zinger</h1>
-        <nav class="navigation"> 
-            <ul>
-                <li><a href="#conheca" class="links-nav">Conheça o APP</a></li>
-                <li><a href="#funcionalidades" class="links-nav">Funcionalidades</a></li>
-                <li><a href="#planos" class="links-nav">Planos e preços</a></li>
-                <li><a href="#download" class="link-baixar">Baixar agora</a></li>
-            </ul> 
-        </nav>
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <h1 class="logo"><a href="#hero">Zingen</a></h1>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-botao" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#conheca" class="links-nav">Conheça o app</a></li>
+                    <li><a href="#funcionalidades" class="links-nav">Funcionalidades</a></li>
+                    <li><a href="#planos" class="links-nav">Planos e preços</a></li>
+                    <li><a href="#download" class="botao botao-claro">Baixar agora</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
         <section id="hero">
-            <div class="imagem-barras">
-                <img src="#" alt="" class="sound-img" />
+            <div class="container hero-conteudo">
+                <div class="imagem-barras">
+                    <img src="assets/img/ondas-som.svg" alt="" class="sound-img">
+                </div>
+                <h2>Quem canta seus males espanta</h2>
+                <h3>Cantar nunca foi tão fácil</h3>
+                <div class="botoes-hero">
+                    <a href="#planos" class="botao botao-escuro">Ver planos</a>
+                    <a href="#download" class="botao botao-claro">Baixar agora</a>
+                </div>
             </div>
-            <h2>Quem canta seus males espanta</h2>
-            <h3>Cantar nunca foi tão fácil</h3>
-            <div class="botões-hero">
-                <a href="Planos" class="link-planos">Ver planos</a>
-                <a href="Download" class="link-baixar">Baixar agora</a>
-            </div>
-            <div class="imagem-redondo">
-                <img src="" alt="">
-            </div>
+            <div class="imagem-redondo" aria-hidden="true"></div>
         </section>
-        <section id="conheca">
-            <h4>CONHEÇA O APP</h4>
-            <h2>O aplicativo perfeito para aprender a cantar</h2>
-            <p>Nosso algoritmo de Inteligência Artificial permite remover a voz original e manter as melodias das músicas. Dessa forma, temos o maior repertório musical para Karaokê! Além disso, ao cantar, sua voz e afinação é comparada pelo algoritmo permitindo uma avaliação precisa da sua performance te ajudando a melhorar seu canto.</p>
-            <div class="imagem-mockup">
-                <img src="#" alt="Interface do App">
-            </div>
-        </section>
-        <section id="funcionalidades">
-            <div class="box">
-                <div class="box-fina" id="biblioteca">
-                    <div class="simbolo">
-                        <img src="" alt=""/>
-                    </div>
-                    <h2>A maior biblioteca de músicas de Karaokê!</h2>
-                    <p>Nossa IA remove a voz de qualquer música e a deixa pronta pra cantar, num passe de mágica!</p>
-                </div>
-                <div class="box-larga" id="gamificada">
-                    <div class="simbolo">
-                        <img src="" alt="">
-                    </div>
-                    <h2>Experiência gamificada</h2>
-                    <p>Sua performance é pontuada de acordo com nosso algoritmo ultra preciso. Desafie-se, ganhe reconhecimento e comemore sua evolução!</p>
-                    <div class="imagem-jogo">
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="box-fina" id="perfomance">
-                    <div class="simbolo">
-                        <img src="" alt="" />
-                    </div>
-                    <h2>Grave suas performances</h2>
-                    <p>Seja para compartilhar com os amigos ou para acompanhar sua evolução, nosso recurso de gravação de áudio e vídeo permite
-                    que você aproveite a experiência ao máximo!</p>
-                </div>
-                <div class="box-larga" id="comunidade">
-                    <div class="imagem-compartilhe">
-                        <img src="" alt="">
-                    </div>
-                    <div class="simbolo">
-                        <img src="" alt="">
-                    </div>
-                    <h2>Compartilhe com a comunidade</h2>
-                    <p>Compartilhe suas gravações com a comunidade, interaja e explore a performance vocal de outras pessoas no seu feed!</p>
-                </div>
-                <div class="box-larga" id="letras">
-                    <div class="simbolo">
-                        <img src="" alt="">
-                    </div>
-                    <h2>Letras em tempo-real</h2>
-                    <p>Nunca perca o ritmo com as letras das músicas sincronizadas e exibidas em tempo real. Você também pode ativar a voz
-                    original da música para ajudar.</p>
-                    <div class="imagem-letras">
-                        <img src="" alt="">
-                    </div>
-                </div>
-            </div>
 
+        <section id="conheca">
+            <div class="container conheca-conteudo">
+                <div class="conheca-texto">
+                    <h4 class="subtitulo">CONHEÇA O APP</h4>
+                    <h2>O aplicativo perfeito para aprender a cantar</h2>
+                    <p>Nosso algoritmo de Inteligência Artificial permite remover a voz original e manter as melodias das músicas. Dessa forma, temos o maior repertório musical para Karaokê! Além disso, ao cantar, sua voz e afinação é comparada pelo algoritmo permitindo uma avaliação precisa da sua performance te ajudando a melhorar seu canto.</p>
+                </div>
+                <div class="imagem-mockup">
+                    <img src="assets/img/mockup-frente.png" alt="Tela de karaokê com a letra da música" class="mockup-frente">
+                    <img src="assets/img/mockup-tras.png" alt="Tela inicial com músicas em alta e gêneros musicais" class="mockup-tras">
+                </div>
+            </div>
+        </section>
+
+        <section id="funcionalidades">
+            <div class="container box">
+                <article class="box-fina" id="biblioteca">
+                    <div class="box-texto">
+                        <img src="assets/img/icone-biblioteca.png" alt="" class="simbolo">
+                        <h3>A maior biblioteca de músicas de Karaokê!</h3>
+                        <p>Nossa IA remove a voz de qualquer música e a deixa pronta pra cantar, num passe de mágica!</p>
+                    </div>
+                </article>
+
+                <article class="box-larga" id="gamificada">
+                    <div class="box-texto">
+                        <img src="assets/img/icone-jogo.png" alt="" class="simbolo">
+                        <h3>Experiência gamificada</h3>
+                        <p>Sua performance é pontuada de acordo com nosso algoritmo ultra preciso. Desafie-se, ganhe reconhecimento e comemore sua evolução!</p>
+                    </div>
+                    <div class="box-imagem">
+                        <img src="assets/img/jogo.png" alt="Tela de karaokê com a letra e a pontuação">
+                    </div>
+                </article>
+
+                <article class="box-fina" id="performance">
+                    <div class="box-texto">
+                        <img src="assets/img/icone-gravar.png" alt="" class="simbolo">
+                        <h3>Grave suas performances</h3>
+                        <p>Seja para compartilhar com os amigos ou para acompanhar sua evolução, nosso recurso de gravação de áudio e vídeo permite que você aproveite a experiência ao máximo!</p>
+                    </div>
+                </article>
+
+                <article class="box-larga box-metade" id="comunidade">
+                    <div class="box-imagem">
+                        <img src="assets/img/comunidade.png" alt="Vídeo de uma performance no feed da comunidade">
+                    </div>
+                    <div class="box-texto">
+                        <img src="assets/img/icone-compartilhar.png" alt="" class="simbolo">
+                        <h3>Compartilhe com a comunidade</h3>
+                        <p>Compartilhe suas gravações com a comunidade, interaja e explore a performance vocal de outras pessoas no seu feed!</p>
+                    </div>
+                </article>
+
+                <article class="box-larga box-metade" id="letras">
+                    <div class="box-texto">
+                        <img src="assets/img/icone-letras.png" alt="" class="simbolo">
+                        <h3>Letras em <span class="sem-quebra">tempo-real</span></h3>
+                        <p>Nunca perca o ritmo com as letras das músicas sincronizadas e exibidas em tempo real. Você também pode ativar a voz original da música para ajudar.</p>
+                    </div>
+                    <div class="box-imagem">
+                        <img src="assets/img/letras.png" alt="Tela com a letra de Hello, da Adele, sincronizada">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="planos">
+            <div class="container">
+                <div class="planos-cabecalho">
+                    <h4 class="subtitulo">PLANOS E PREÇOS</h4>
+                    <h2>Assine e tenha acesso ilimitado a todas as funcionalidades</h2>
+                </div>
+
+                <div class="planos-lista">
+                    <article class="plano">
+                        <div class="plano-topo">
+                            <h3>Básico</h3>
+                            <p class="plano-descricao">Baixe o app e comece a cantar agora mesmo!</p>
+                        </div>
+                        <p class="plano-preco">Grátis</p>
+                        <a href="#download" class="botao botao-contorno">Baixar agora</a>
+                        <hr class="plano-divisor">
+                        <ul>
+                            <li>Com anúncios</li>
+                            <li>Até 5 músicas por dia</li>
+                            <li>Cante apenas as músicas disponíveis no plano gratuito</li>
+                        </ul>
+                    </article>
+
+                    <article class="plano plano-destaque">
+                        <span class="plano-selo">1 MÊS GRÁTIS</span>
+                        <div class="plano-topo">
+                            <h3>Premium</h3>
+                            <p class="plano-descricao">Ideal para quem já cansou de passar vergonha no Karaokê</p>
+                        </div>
+                        <p class="plano-preco">R$ 24,90 <span>/mês</span></p>
+                        <a href="#download" class="botao botao-claro">Experimente de graça</a>
+                        <hr class="plano-divisor">
+                        <ul>
+                            <li>Sem interrupção de anúncios</li>
+                            <li>Cante quantas músicas quiser</li>
+                            <li>Cante todas as músicas da biblioteca</li>
+                        </ul>
+                    </article>
+
+                    <article class="plano">
+                        <div class="plano-topo">
+                            <h3>Família</h3>
+                            <p class="plano-descricao">Para aquelas famílias que adoram se reunir pra cantar</p>
+                        </div>
+                        <p class="plano-preco">R$ 21,90 <span>/mês por pessoa</span></p>
+                        <a href="#download" class="botao botao-contorno">Assinar agora</a>
+                        <hr class="plano-divisor">
+                        <ul>
+                            <li>Sem interrupção de anúncios</li>
+                            <li>Cante quantas músicas quiser</li>
+                            <li>Cante todas as músicas da biblioteca</li>
+                        </ul>
+                        <p class="plano-obs">Mínimo de 4 pessoas no plano família.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="download">
+            <div class="container">
+                <div class="download-card">
+                    <div class="download-texto">
+                        <h4 class="subtitulo">DOWNLOAD</h4>
+                        <h2>Bora cantar?</h2>
+                        <p>Despeje os seus talentos de cantar. Entre no app e dê um play na sua comunidade musical mais animada! Baixe o Zingen e transforme suas performances em experiências inesquecíveis!</p>
+                        <div class="botoes-download">
+                            <a href="#" class="link-loja">
+                                <img src="assets/img/icone-apple.png" alt="">
+                                <span>
+                                    <small>Download on the</small>
+                                    App Store
+                                </span>
+                            </a>
+                            <a href="#" class="link-loja">
+                                <img src="assets/img/icone-google-play.png" alt="">
+                                <span>
+                                    <small>GET IT ON</small>
+                                    Google Play
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="download-imagem">
+                        <img src="assets/img/pessoa.png" alt="Homem de suéter amarelo cantando com fones de ouvido e o celular na mão">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="rodape-topo">
+                <p class="logo">Zingen</p>
+                <div class="rodape-colunas">
+                    <nav class="rodape-coluna">
+                        <h4>PRODUTO</h4>
+                        <ul>
+                            <li><a href="#funcionalidades">Funcionalidades</a></li>
+                            <li><a href="#planos">Planos e preços</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="rodape-coluna">
+                        <h4>EMPRESA</h4>
+                        <ul>
+                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="#">Trabalhe conosco</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="rodape-coluna">
+                        <h4>LEGAL</h4>
+                        <ul>
+                            <li><a href="#">Termos de uso</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="rodape-base">
+                <ul class="redes-sociais">
+                    <li><a href="#" aria-label="TikTok"><img src="assets/img/social-tiktok.png" alt=""></a></li>
+                    <li><a href="#" aria-label="Instagram"><img src="assets/img/social-instagram.png" alt=""></a></li>
+                    <li><a href="#" aria-label="X"><img src="assets/img/social-x.png" alt=""></a></li>
+                    <li><a href="#" aria-label="Discord"><img src="assets/img/social-discord.png" alt=""></a></li>
+                </ul>
+                <p>&copy;2024 Zingen Technologies, Inc.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
